@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="Details">
+
+</form>
+ <div class="container">
+        <h1>Recipe Details</h1>
+
+        {% if recipes %}
+            <h2>{{ recipes.name }}</h2>
+            <p>{{ recipes.description }}</p>
+
+            <h3>Ingredients:</h3>
+            <ul>
+                {% for ingredient in ingredients %}
+                    {% if ingredient.strip %} <!-- Check if ingredient is not empty -->
+                        <li>{{ ingredient }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No recipe details available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

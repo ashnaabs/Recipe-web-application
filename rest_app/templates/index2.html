@@ -1,0 +1,314 @@
+<!doctype html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
+	<title>Food Bar</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
+	<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/popup/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/swiper/css/swiper.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/scroll/jquery.mCustomScrollbar.css' %}">
+	<!-- main css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+
+<body>
+
+	<!--================Offcanvus Menu Area =================-->
+	<div class="side_menu">
+		<a class="logo" href="#">
+			<img src="{% static 'img/logo.png' %}" alt="">
+		</a>
+		<ul class="list menu_right">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about-us.html">About</a>
+			</li>
+			<li>
+				<a href="menu.html">Menu</a>
+			</li>
+			<li>
+				<a href="book-table.html">Book a table</a>
+			</li>
+			<li>
+				<a href="#">Pages</a>
+				<ul class="list">
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="elements.html">Elements</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Blog</a>
+				<ul class="list">
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="single-blog.html">Blog Details</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+		<ul class="list social">
+			<li>
+				<a href="#">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-dribbble"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-behance"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--================End Offcanvus Menu Area =================-->
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area home_menu">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html">
+						<img src="{% static 'img/logo-2.png' %}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					 aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about-us.html">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="menu.html">Menu</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="book-table.html">Book a table</a>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a class="nav-link" href="gallery.html">Gallery</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="elements.html">Elements</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a class="nav-link" href="blog.html">Blog</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="single-blog.html">Blog Details</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================Canvus Menu Area =================-->
+	<div class="canvus_menu">
+		<div class="container">
+			<div class="float-right">
+				<div class="toggle_icon">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================End Canvus Menu Area =================-->
+
+	<!--================ Start banner section =================-->
+	<section class="home_banner relative">
+		<div class="container-fluid pl-0">
+			<div class="row justify-content-center align-items-center full_height">
+				<div class="col-lg-6 p-0">
+					<div class="banner_left d-flex justify-content-center flex-column">
+						<h1>delicious cupcakes</h1>
+						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially
+							in the workplace. That’s why it’s crucial that, as women.
+						</p>
+						<a class="main_btn" href="{% url 'create_recipe' %}">check our menu</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="banner_right d-flex justify-content-center align-items-center">
+						<div class="round-planet planet">
+							<div class="round-planet planet2">
+								<div class="round-planet planet3">
+									<div class="shape shape1"></div>
+									<div class="shape shape2"></div>
+									<div class="shape shape3"></div>
+									<div class="shape shape4"></div>
+									<div class="shape shape5"></div>
+									<div class="shape shape6"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% if data1 %}
+		{% for item in data1 %}
+		<img class="face-img img-fluid" src="/recipe/{{ item.recipe.img }}" alt="">
+		{% endfor %}
+		{% endif %}
+	</section>
+	<!--================ End banner section =================-->
+
+	<!--================ Top Dish Area =================-->
+<div>
+    {% if data %}
+        {% for item in data %}
+            <img class="img-fluid" src="/recipe/{{ item.recipe_img }}" alt="">
+            <h4>{{ item.name }}</h4>
+            <p>{{ item.prep_time }}</p>
+            {% if item.difficulty == 1 %}
+                <p>Easy</p>
+            {% elif item.difficulty == 2 %}
+                <p>Medium</p>
+            {% else %}
+                <p>Hard</p>
+            {% endif %}
+            <div>
+                <a href="/recipe_fetch/{{ item.id }}" class="btn btn-primary">Details</a>
+            </div>
+            <div>
+                <a href="/update_detail/{{ item.id }}" class="btn btn-success">Update</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        {% for recipe in recipes.object_list %}
+            <img class="img-fluid" src="{{ recipe.recipe_image }}" alt="">
+            <h4>{{ recipe.name }}</h4>
+            <p>{{ recipe.prep_time }}</p>
+            {% if recipe.difficulty == 1 %}
+                <p>Easy</p>
+            {% elif recipe.difficulty == 2 %}
+                <p>Medium</p>
+            {% else %}
+                <p>Hard</p>
+            {% endif %}
+            <div>
+                <a href="/recipe_fetch/{{ recipe.id }}" class="btn btn-primary">Details</a>
+            </div>
+            <div>
+                <a href="/update_detail/{{ recipe.id }}" class="btn btn-success">Update</a>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% for recipe in recipes.object_list %}
+        <div class="modal fade" id="exampleModal{{ forloop.counter }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Delete Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 style="font-size:16px;font-family:century"> Do you want to delete {{ recipe.name }} </h3>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/recipe_delete/{{ recipe.id }}" class="btn btn-danger">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    <div class="mx-auto" style="margin-bottom: 38px;">
+        {% if recipes.paginator.num_pages > 1 %}
+            <div class="text-center">
+                {% for pg in recipes.paginator.page_range %}
+                    <a href="?page={{ pg }}" class="btn btn-primary btn-sn {% if recipes.number == pg %} active {% endif %}">{{ pg }}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<!--================ End Top Dish Area =================-->
+
+
+
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/stellar.js' %}"></script>
+	<script src="{% static 'js/jquery.lightbox.js' %}"></script>
+	<script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+	<script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+	<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+	<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script>
+	<script src="{% static 'js/mail-script.js' %}"></script>
+	<script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'vendors/swiper/js/swiper.min.js' %}"></script>
+	<script src="{% static 'vendors/scroll/jquery.mCustomScrollbar.js' %}"></script>
+	<script src="{% static 'js/theme.js' %}"></script>
+</body>
+</html>
+{% endblock %}
